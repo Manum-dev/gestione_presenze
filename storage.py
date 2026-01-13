@@ -11,7 +11,7 @@ BACKUP_FILE = "database_backup.json"
 # Tipi di stato presenza
 StatoPresenza = Literal["Presente", "Assente", "Ritardo"]
 
-class Storage:
+class storage:
     def __init__(self, db_file: str = DB_FILE):
         self.db_file = db_file
         self.backup_file = BACKUP_FILE
