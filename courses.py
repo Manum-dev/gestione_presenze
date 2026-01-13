@@ -65,3 +65,4 @@ class Corsi:
         del self.dati[nome_corso]
         self.salva()
         print(f"Corso '{nome_corso}' eliminato con successo.")
+        
