@@ -1,0 +1,55 @@
+
+📋 Caratteristiche del Progetto (Features)
+Ecco la lista delle funzionalità implementate nell'applicativo di gestione presenze:
+
+1. 📚 Gestione Corsi
+[ ] Creazione Corso: Possibilità di aggiungere nuovi corsi al registro.
+
+[ ] Visualizzazione: Elenco completo dei corsi attivi.
+
+[ ] Modifica: Rinominazione dei corsi esistenti.
+
+[ ] Eliminazione: Cancellazione di un corso e dei dati associati.
+
+2. 🎓 Gestione Studenti
+[ ] Iscrizione Studente: Aggiunta di nuovi studenti all'interno di uno specifico corso.
+
+[ ] Anagrafica: Visualizzazione della lista studenti per ogni corso.
+
+[ ] Modifica Dati: Correzione o aggiornamento dei nomi degli studenti.
+
+[ ] Rimozione: Eliminazione di uno studente dal corso.
+
+3. 🗓️ Registro Presenze
+[ ] Input Giornaliero: Inserimento dello stato di presenza per una data specifica.
+
+[ ] Visualizzazione Visuale: Report presenze basato sulla data con indicatori grafici immediati:
+
+🟢 Presente
+
+🔴 Assente
+
+⚠️ Ritardo (Opzionale)
+
+[ ] Storico: I dati vengono mantenuti in memoria per consultazioni future.
+
+4. 💾 Persistenza Dati
+[ ] Salvataggio JSON: Tutti i dati (Corsi, Studenti, Storico Presenze) vengono salvati su file .json.
+
+[ ] Caricamento Automatico: Ripristino dello stato dell'applicazione all'avvio.
+
+🛠️ Esempio di Struttura Dati (JSON)
+L'applicazione genera e legge un file strutturato come segue:
+
+JSON
+
+{
+  "NomeCorso": {
+    "studenti": [
+      { "id": "uuid", "nome": "Mario Rossi" }
+    ],
+    "registro": {
+      "13-01-2026": { "uuid": "Presente" }
+    }
+  }
+}
