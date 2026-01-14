@@ -18,7 +18,7 @@ def main():
     course_mgr = Corsi(DB_FILE)
     course_mgr.dati = data 
     
-    # Il tuo modulo (Elisabetta) riceve il riferimento ai dati 
+    # Il modulo Atrendance (Elisabetta) riceve il riferimento ai dati 
     attendance_mgr = AttendanceManager(data)
 
     while True:
